@@ -1,0 +1,14 @@
+{
+    "name": "Hunter - Dealer",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "dev": "cd assets/ && npm run dev",
+      "build": "cd assets/ && npm run build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+  
