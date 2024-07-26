@@ -8,7 +8,7 @@ wp_enqueue_style('thankyou', get_template_directory_uri() . '/template-page/than
 wp_enqueue_script('thankyou', get_template_directory_uri() . '/template-page/thankyou/assets/dist/app.js', array(), false, array());
 ?>
 
-<main id="primary">
+<main class="overflow-x-hidden" id="primary">
 
     <div class="section position-relative" id="thankyou">
         <div class="image-wrapper">
