@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "~swiper/scss";
+@import "~swiper/scss/scrollbar";
+@import "~swiper/scss/pagination";
+@import "~swiper/scss/navigation";
+:root {
+    --swiper-scrollbar-size: 9px;
+    --swiper-pagination-bullet-inactive-color: #fff;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-color: #ED2224;
+    --swiper-pagination-bullet-width: 12px;
+    --swiper-pagination-bullet-height: 12px;
+    --swiper-navigation-sides-offset: 30px;
+}
+.swiper-pagination-bullet {
+    border: 2px solid #fff;
+}
+
+.swiper-button-prev:after {
+    display: none;
+}
+.swiper-button-next:after {
+    display: none;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+body {
+    @apply text-white;
+}
+
+.section {
+    @apply bg-[#0e1111]
+}
+
+.bg-secondary {
+    background-color: #1D2020!important;
+}
+
+.ratio-38 {
+    padding-top: 38%;
+}
+.ratio-56 {
+    padding-top: 56%;
+}
+.ratio-62 {
+    padding-top: 62%;
+}
+.ratio-70 {
+    padding-top: 70%;
+}
+.ratio-100 {
+    padding-top: 100%;
+}
+.image-ratio, .media-ratio {
+    position: relative;
+    img, video {
+        position: absolute;
+        inset: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.text-title {
+    font-size: 32px;
+}
+.text-subtitle {
+    font-size: 24px;
+}
+.text-button {
+    font-size: 20px;
+}
+.text-body {
+    font-size: 18px;
+    color: #fff!important;
+    margin-bottom: 1rem;
+}
+.text-smol {
+    font-size: 18px;
+}
+
+@media(min-width: 1028px) {
+    .text-title {
+        font-size: 36px;
+    }
+    .text-subtitle {
+        font-size: 28px;
+    }
+    .text-button {
+        font-size: 24px;
+    }
+    .text-body {
+        font-size: 20px;
+        color: #fff!important;
+    }
+    .text-smol {
+        font-size: 16px;
+    }
+}
+
+@media(min-width: 1366px) {
+    .text-title {
+        font-size: 48px;
+    }
+    .text-subtitle {
+        font-size: 32px;
+    }
+    .text-button {
+        font-size: 28px;
+    }
+    .text-body {
+        font-size: 24px;
+        color: #fff!important;
+    }
+    .text-smol {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 992px) {
+    .px-mobile-4 {
+        padding-left: 1.5rem!important;
+        padding-right: 1.5rem!important;
+    }
+}
+
+
+
+a.btn-style {
+    @apply px-6 py-1 bg-[#ED2224] text-white inline-block text-button;
+}
+
+@media(min-width: 1024px) {
+    a.btn-style {
+        @apply px-12 py-2;
+    }
+}
+
+.swiper-scrollbar {
+   background: #1D2020;
+
+    .swiper-scrollbar-drag {
+        background: #ED2224;
+    }
+}
+
+
+#contact {
+    .form-wrapper {
+        label {
+            color: #929292;
+            margin-bottom: .25rem;
+        }
+        input, textarea {
+            width: 100%;
+            border: 1px solid #929292;
+            background-color: transparent;
+            margin-bottom: 1rem;
+            @apply text-body py-3 px-6;
+        }
+        input.wpcf7-submit {
+            width: auto;
+            border: 0;
+            @apply px-12 py-2 bg-[#ED2224] text-white inline-block text-button;
+        }
+    }
+}
+@media(max-width: 576px) {
+    main {
+        margin-top: var(--nav-height);
+    }
+}
+
+.wpcf7-spinner {
+    display: none!important;
+}
