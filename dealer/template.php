@@ -266,4 +266,17 @@ wp_enqueue_script('dealer', get_template_directory_uri() . '/template-page/deale
 </main>
 
 
+<?php if(get_field('contact')['redirect']) : ?>
+
+    <script>
+        document.addEventListener('wpcf7mailsent', (event) => {
+            setTimeout(() => {
+                window.location.href = '<?= get_field('contact')['redirect'] ?>'
+            }, 2000);
+        })
+    </script>
+
+<?php endif; ?>
+
+
 <?php get_footer() ?>
